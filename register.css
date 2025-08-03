@@ -1,0 +1,44 @@
+body {
+    background-color:bisque; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.log {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color:cadetblue; 
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid black;
+    
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color:cadetblue;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+p {
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+a {
+    color:cadetblue;
+    text-decoration: none;
+}

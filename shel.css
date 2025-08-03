@@ -1,0 +1,41 @@
+body {
+    background-color:bisque;
+    margin: 0;
+    padding: 20px;
+    justify-content: center;
+}
+h1 {
+    text-align: center;
+    color:white;
+    margin-bottom: 30px;
+}
+.shelter-card {
+    background: white;
+    padding: 15px;
+    margin: 20px auto;
+    width: 700px;
+    text-align: center;
+}
+.img {
+    width: 80%;
+    height: 220px;
+    margin-bottom: 10px;
+}
+.shelter-card h3 {
+    color: cadetblue;
+    margin: 10px 0 5px;
+}
+.shelter-card p {
+    margin: 5px 0;
+    color: black;
+    font-size: 0.95em;
+}
+#back{
+     background-color:cadetblue;      
+    color: white;
+    display: flex;                   
+    justify-content: space-between;  
+    font-weight: bold;
+    align-items: center;
+    padding :0;
+}

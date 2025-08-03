@@ -1,0 +1,49 @@
+body {
+    background-color:bisque;
+    text-align: center;
+}
+header {
+    background-color:cadetblue;
+    color: white;
+    padding: 15px;
+    font-size: 1.5em;
+     justify-content: space-between;  
+    display: flex;  
+}
+
+.sos-heading {
+    margin-top: 20px;
+    color: crimson;
+}
+
+.sos-info {
+    font-size: 1.1em;
+}
+.sos-btn {
+    background-color: red;
+    color: white;
+    font-size: 1.5em;
+    padding: 15px 30px;
+    border: none;
+    
+    
+}
+.helpline-title {
+    color:red;
+}
+
+.helpline-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1em;
+}
+.helpline-item {
+    margin: 8px 0;
+}
+.loc-btn{
+     background-color: red;
+    color: white;
+    font-size: 1.5em;
+    padding: 15px 30px;
+    border: none;
+}

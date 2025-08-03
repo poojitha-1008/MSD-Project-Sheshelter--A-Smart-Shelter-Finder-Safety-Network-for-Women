@@ -1,0 +1,31 @@
+body {
+    background-color:bisque;      
+    display: flex;
+    justify-content: center;         
+    align-items: center;             
+                  
+}
+
+.log {
+    background-color: white;        
+    padding: 10px;        
+    width: 300px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+    
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    background-color:cadetblue;    
+    color: white;
+    border: none;
+    font-weight: bold;
+}

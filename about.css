@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color:beige;
+}
+
+header {
+    background-color: cadetblue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+    display:flex;
+    align-items: center;
+}
+
+ a {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+div {
+    background:beige;
+    padding: 20px;
+}
+ul{
+    font-size: 1.1em;
+}
+h2{
+    color: cadetblue;
+}
+p{
+    font-size: 1.1em;
+}
