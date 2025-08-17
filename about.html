@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SheShelter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="animated-bg"></div>
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <i class="fas fa-shield-alt"></i>
+            <h1>SheShelter</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="sos.html">Emergency SOS</a></li>
+                <li><a href="shelter.html">Shelters</a></li>
+                <li><a href="threat-alert.html">Report Threat</a></li>
+                <li><a href="login.html" class="login-btn">Login <i class="fas fa-user"></i></a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+
+    <main class="main-content">
+        <section class="about-intro">
+            <h2>About SheShelter</h2>
+            <div class="mission-box">
+                <h3>Our Mission</h3>
+                <p>SheShelter is dedicated to creating a safer world for women by providing immediate access to safe spaces and emergency assistance. We believe every woman deserves the right to move freely without fear, and we're committed to making that vision a reality through technology and community support.</p>
+            </div>
+        </section>
+        
+        <section class="about-section">
+            <h3>Our Vision</h3>
+            <p>Our vision is to build a future where women can move freely without fear. We aim to create a nationwide network of safe spaces and integrate innovative safety tools that work in real time. Beyond immediate assistance, SheShelter is committed to raising awareness, educating communities, and empowering women with the knowledge and resources they need to stay safe.</p>
+        </section>
+        
+        <section class="about-section">
+            <h3>What We Do</h3>
+            <p>We provide real-time shelter availability, an SOS alert system, and verified emergency contacts to enhance safety and peace of mind. Using advanced location technology, we connect women with the nearest verified safe locations, whether it's a shelter, community center, or trusted support organization. Our platform also provides direct access to emergency helpline numbers so that help is only a click away.</p>
+        </section>
+
+        <section class="about-section">
+            <h3>How We Help</h3>
+            <p>Our platform is built to be easy to use, even in stressful situations. We understand that during emergencies, every second counts. That's why SheShelter offers quick navigation to shelters, one-tap calling to emergency numbers, and secure location sharing with trusted contacts. By minimizing the steps required to get help, we ensure that users can act quickly and safely.</p>
+        </section>
+
+        <section class="features-section">
+            <h3>What We Offer</h3>
+            <ul class="features-list">
+                <li>Instant access to nearby safe shelters with real-time availability updates</li>
+                <li>Emergency SOS button with live location sharing to trusted contacts</li>
+                <li>Quick dial to verified helpline numbers and emergency services</li>
+                <li>24/7 updated shelter information with security verification</li>
+                <li>Simple, intuitive interface designed for emergency situations</li>
+                <li>Secure platform that respects user privacy and safety</li>
+                <li>Strong partnerships with local safety networks and women's organizations</li>
+                <li>Educational resources on personal safety and self-defense</li>
+            </ul>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+<script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+</script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

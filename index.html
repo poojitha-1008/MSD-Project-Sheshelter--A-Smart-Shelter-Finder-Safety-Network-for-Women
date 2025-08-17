@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>SheShelter for Women</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+   
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <i class="fas fa-shield-alt"></i>
+            <h1>SheShelter</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="sos.html">Emergency SOS</a></li>
+                <li><a href="shelter.html">Shelters</a></li>
+                <li><a href="threat-alert.html">Report Threat</a></li>
+                <li><a href="login.html" class="login-btn">Login <i class="fas fa-user"></i></a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+<!-- Replace the current hero section with this -->
+<section class="hero-with-bg">
+    <div class="hero-content">
+        <h2>Empowering Women Through Safety</h2>
+        <p class="tagline">Find immediate shelter, connect with support networks, and access emergency services when you need them most.</p>
+        <div class="hero-buttons">
+            <a href="sos.html" class="btn emergency-btn">
+                <i class="fas fa-bell"></i> Emergency SOS
+            </a>
+            <a href="shelter.html" class="btn shelter-btn">
+                <i class="fas fa-map-marker-alt"></i> Find Nearest Shelter
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Safety Features -->
+    <section class="safety-features">
+        <div class="section-header">
+            <h3>Your Safety is Our Priority</h3>
+            <p>Comprehensive protection features designed for women's security</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon pulse">
+                    <i class="fas fa-shield-virus"></i>
+                </div>
+                <h4>Instant Protection</h4>
+                <p>One-tap emergency alerts with your location sent to authorities and trusted contacts</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon pulse">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <h4>Smart Shelter Map</h4>
+                <p>Real-time updated database of verified women's shelters and safe spaces</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon pulse">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <h4>Trust Network</h4>
+                <p>Connect with verified support groups and community volunteers</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon pulse">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h4>24/7 Support</h4>
+                <p>Anonymous chat with trained counselors and legal advisors</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="section-header">
+            <h3>Stories of Safety</h3>
+            <p>Hear from women who found help through SheShelter</p>
+        </div>
+        <div class="testimonial-slider">
+            <div class="testimonial-card">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">"When I needed to leave quickly, SheShelter showed me the nearest safe place. The staff were expecting me and I felt protected immediately."</p>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah M.">
+                    <div>
+                        <h5>Sarah M.</h5>
+                        <p>Survivor & Advocate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">"The emergency SOS feature gave me confidence to walk home at night. Knowing help is just one tap away makes all the difference."</p>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya K.">
+                    <div>
+                        <h5>Priya K.</h5>
+                        <p>University Student</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <div id="footer-placeholder"></div>
+
+    <script src="index.js"></script>
+
+    <script>
+        // Load footer
+        fetch('footer.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Footer not found');
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading footer:', error);
+            });
+    </script>
+</body>
+</html>

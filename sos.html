@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency SOS - SheShelter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="sos.css">
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <i class="fas fa-shield-alt"></i>
+            <h1>SheShelter</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="sos.html" class="active">Emergency SOS</a></li>
+                <li><a href="shelter.html">Shelters</a></li>
+                <li><a href="threat-alert.html">Report Threat</a></li>
+                <li><a href="login.html" class="login-btn">Login <i class="fas fa-user"></i></a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+    <main class="sos-container">
+        <section class="emergency-banner">
+            <div class="banner-content">
+                <h1><i class="fas fa-exclamation-triangle"></i> Emergency Assistance</h1>
+                <p>Immediate help when you need it most. Your safety is our priority.</p>
+            </div>
+        </section>
+
+        <section class="sos-alert">
+            <h2 class="sos-heading">Emergency SOS Alert</h2>
+            <p class="sos-info">Press and hold the button below to send an immediate distress signal to emergency services and your trusted contacts.</p>
+            
+            <div class="sos-button-container">
+                <button class="sos-btn" id="sosButton">
+                    <span class="sos-text">SOS</span>
+                    <span class="sos-pulse"></span>
+                    <i class="fas fa-bell alarm-icon"></i>
+                </button>
+                <p class="sos-instructions">Hold for 3 seconds to activate emergency alert</p>
+            </div>
+        </section>
+
+        <section class="emergency-steps">
+            <h2><i class="fas fa-list-ol"></i> What Happens When You Activate SOS</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Alert Sent</h3>
+                    <p>Your emergency alert is immediately sent to local authorities and your emergency contacts.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Response Activated</h3>
+                    <p>Emergency services are notified with your information and will respond as quickly as possible.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Follow Instructions</h3>
+                    <p>Stay calm and follow any instructions provided by emergency responders.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="helplines">
+            <h2><i class="fas fa-phone-alt"></i> Emergency Contact Numbers</h2>
+            <div class="helpline-grid">
+                <div class="helpline-category">
+                    <h3>National Helplines</h3>
+                    <ul class="helpline-list">
+                        <li class="helpline-item">Women's Helpline (All India): <span class="helpline-number">1091</span></li>
+                        <li class="helpline-item">National Emergency: <span class="helpline-number">112</span></li>
+                        <li class="helpline-item">Police: <span class="helpline-number">100</span></li>
+                        <li class="helpline-item">Ambulance: <span class="helpline-number">108</span></li>
+                    </ul>
+                </div>
+                <div class="helpline-category">
+                    <h3>Specialized Help</h3>
+                    <ul class="helpline-list">
+                        <li class="helpline-item">Child Helpline: <span class="helpline-number">1098</span></li>
+                        <li class="helpline-item">Domestic Violence: <span class="helpline-number">181</span></li>
+                        <li class="helpline-item">Senior Citizen: <span class="helpline-number">14567</span></li>
+                        <li class="helpline-item">Mental Health: <span class="helpline-number">08046110007</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="safety-tips">
+            <h2><i class="fas fa-lightbulb"></i> Safety Tips</h2>
+            <div class="tips-container">
+                <div class="tip-card">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Be Aware</h3>
+                    <p>Always be aware of your surroundings and trust your instincts.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Know Locations</h3>
+                    <p>Identify safe places along your regular routes.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Keep Phone Ready</h3>
+                    <p>Have your phone charged and easily accessible.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="emergency-modal" id="emergencyModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h3>EMERGENCY ALERT ACTIVATED</h3>
+                </div>
+                <p>Help is on the way! Authorities have been notified.</p>
+                <div class="modal-timer-container">
+                    <div class="modal-timer" id="modalTimer">5</div>
+                    <span>seconds until alert is sent</span>
+                </div>
+                <div class="modal-actions">
+                    <button class="cancel-btn" id="cancelSosBtn">
+                        <i class="fas fa-times"></i> CANCEL ALERT
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <p>If this is a real emergency, stay on the line if possible.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   <div id="footer-placeholder"></div>
+
+<script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+</script>
+
+    <script src="sos.js"></script>
+</body>
+</html>

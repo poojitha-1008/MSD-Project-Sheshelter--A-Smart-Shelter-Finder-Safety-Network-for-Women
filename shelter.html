@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Shelters - SheShelter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="shel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="animated-bg"></div>
+    
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <h1>SheShelter</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="sos.html">Emergency SOS</a></li>
+                    <li><a href="shelter.html" class="active">Shelters</a></li>
+                    <li><a href="threat-alert.html">Report Threat</a></li>
+                    <li><a href="login.html" class="login-btn">Login <i class="fas fa-user"></i></a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="shelter-main">
+        <div class="page-header">
+            <h2>Nearby Safe Shelters</h2>
+            <p>Find verified women's shelters across India with real-time availability</p>
+        </div>
+
+        <div class="filter-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search by location or shelter name...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filter-options">
+                <select id="cityFilter">
+                    <option value="">All Cities</option>
+                    <option>Hyderabad</option>
+                    <option>Bengaluru</option>
+                    <option>Delhi</option>
+                    <option>Chennai</option>
+                    <option>Pune</option>
+                    <option>Mumbai</option>
+                    <option>Kolkata</option>
+                    <option>Jaipur</option>
+                    <option>Ahmedabad</option>
+                    <option>Kochi</option>
+                </select>
+                <select id="availabilityFilter">
+                    <option value="">All Availability</option>
+                    <option value="5">5+ Beds Available</option>
+                    <option value="10">10+ Beds Available</option>
+                    <option value="15">15+ Beds Available</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="shelter-grid" id="shelterGrid">
+            <!-- Shelter cards will be dynamically inserted here by JavaScript -->
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="shelter.js"></script>
+    <script>
+        // Load footer
+        fetch('footer.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Footer not found');
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading footer:', error);
+            });
+    </script>
+</body>
+</html>
